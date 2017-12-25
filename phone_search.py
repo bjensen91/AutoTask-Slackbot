@@ -9,7 +9,7 @@ import json
 at = atws.connect(username='<YOUR AUTOTASK USERNAME>',password='<YOUR AUTOTASK PASSWORD>')
 
 #You will need to modify the list below to allow this phone search example to work. You must use the autotask info script to discover what values correspond to what service level, you may simply remove all references to this list as well, replace with ''
-
+#OR delete this list and replace all instances of list5[accountnumberquery.KeyAccountIcon] with '' or 'some information'
 
 list1 = [0] * 7
 list2 = ['Jeopardy', 0, 0, 0, 0,'Time and Materials', 'Residential', 'Jeopardy', 'MSP Gold', 'Residential MSP', 'Tier One MSP']
