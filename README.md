@@ -7,13 +7,17 @@ Python 3.6 is required as well as the atws python module available via pip. I HI
 To install...
 
 install python 3.6.x
+
 FOR WINDOWS -- https://www.python.org/downloads/ choose any version above 3.6
+
 FOR macOS -- https://www.python.org/downloads/mac-osx/ ^^
+
 For LINUX -- compile from source -- https://www.python.org/downloads/source/ or follow your distro specific guidelines
 
 open a terminal or administrative command prompt...
 
 pip install atws
+
 pip install slackbot
 
 
@@ -42,24 +46,24 @@ They may need to be modified slightly to work for your company, see info.py on h
     F) The color of the attatchment corresponds to the priority of the ticket: Blue = low, Green = medium, Orange = high,       Red = Critical
 
 2) priority.py 
-Change the priority of a ticket form slack. to use, call your bot, type priority, followed by what level of priority. @<yourbotsname> priotiry <low> <medium> <high> <critical>
+Change the priority of a ticket form slack. to use, call your bot, type priority, followed by what level of priority. @'yourbotsname' priotiry low or medium or high or critical
   
 3) assign.py
-Assign a ticket to an autotask resource via First and Last name. to use, call your bot, type assign, folled by the first and last name of the autotask resource. @<yourbotsname> assign <Fisrtname> <Lastname>
+Assign a ticket to an autotask resource via First and Last name. to use, call your bot, type assign, folled by the first and last name of the autotask resource. @'yourbotsname' assign Fisrtname Lastname
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------The scripts below will need more modification to work for you, all information needed to allow these scripts to funciton will be clearly documented in the script its self.
 
 4)notation.py
-add notes to a ticket from slack. To use, call your bot, enter the ticketnumber, then whatever you enter in quotes after that will be added to a note on that ticket. @<yourbotsname> <TicketNumber> "Whatever in quotes goes in the notes"
+add notes to a ticket from slack. To use, call your bot, enter the ticketnumber, then whatever you enter in quotes after that will be added to a note on that ticket. @'yourbotsname' TicketNumber "Whatever in quotes goes in the notes"
   
 5)phone_search.py
-Search AutoTask for Companies or Contacts via phone-number. To use, call your bot, type search, then enter a 10 digit phone number (do not use special characters). @<yourbotsname> search 11122233333
+Search AutoTask for Companies or Contacts via phone-number. To use, call your bot, type search, then enter a 10 digit phone number (do not use special characters). @'yourbotsname' search 11122233333
   
 6)queue.py
-change a ticket to another Autotask Queue. To use, call your bot, type queue, then type the desired queue. @<yourbotsname> queue <yourautotaskqueue>
+change a ticket to another Autotask Queue. To use, call your bot, type queue, then type the desired queue. @'yourbotsname' queue yourautotaskqueue
 
 7)status.py
-change the status of a ticket via slack. To use, call your bot, type status, then type the desired status. @<yourbotsname> status <desired autotask status>
+change the status of a ticket via slack. To use, call your bot, type status, then type the desired status. @'yourbotsname' status desired-autotask-status
   
 8)help.py
 define what your bot can do and how to call its functions.
