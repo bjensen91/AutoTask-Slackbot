@@ -23,6 +23,13 @@ pip install slackbot
 
 drag your desired scripts into the slackbot/slackbot/plugin folder located where python installs you modules. Alternatively you may clone or download https://github.com/lins05/slackbot and put them into your plugins folder there.
 (optional) replace the default "dispatcher.py" with the one provided to allow each slackbot reply to be placed in its own thread as opposed to a general message. I find it to be much better.
+
+execute the bot!
+
+cd into the slackbot folder then...
+
+python slackbot/run.py (or for windows) python slackbot\run.py
+
 If you have any questions DO NOT HESITATE TO EMAIL ME, this is an EXCELLENT first coding project, or fisrt python project. I will do my absolute best to anwser ANY question, related to this project or otherwise.
 
 These plugins (once configured) will do a variety of AutoTask related funcitons...
@@ -31,6 +38,7 @@ They may need to be modified slightly to work for your company, see info.py on h
 
 
 1) ticket_listen.py
+
   Listens for any mention of an AutoTask ticket, then replies in slack with an attatchment containing..
     
     A) The title of the ticket that links to the ticket within autotask
@@ -46,6 +54,7 @@ They may need to be modified slightly to work for your company, see info.py on h
     F) The color of the attatchment corresponds to the priority of the ticket: Blue = low, Green = medium, Orange = high,       Red = Critical
 
 2) priority.py 
+
 Change the priority of a ticket form slack. to use, call your bot, type priority, followed by what level of priority. @'yourbotsname' priotiry low or medium or high or critical
   
 3) assign.py
@@ -53,17 +62,22 @@ Assign a ticket to an autotask resource via First and Last name. to use, call yo
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------The scripts below will need more modification to work for you, all information needed to allow these scripts to funciton will be clearly documented in the script its self.
 
-4)notation.py
+4) notation.py
+
 add notes to a ticket from slack. To use, call your bot, enter the ticketnumber, then whatever you enter in quotes after that will be added to a note on that ticket. @'yourbotsname' TicketNumber "Whatever in quotes goes in the notes"
   
-5)phone_search.py
+5) phone_search.py
+
 Search AutoTask for Companies or Contacts via phone-number. To use, call your bot, type search, then enter a 10 digit phone number (do not use special characters). @'yourbotsname' search 11122233333
   
-6)queue.py
+6) queue.py
+
 change a ticket to another Autotask Queue. To use, call your bot, type queue, then type the desired queue. @'yourbotsname' queue yourautotaskqueue
 
-7)status.py
+7) status.py
+
 change the status of a ticket via slack. To use, call your bot, type status, then type the desired status. @'yourbotsname' status desired-autotask-status
   
-8)help.py
+8) help.py
+
 define what your bot can do and how to call its functions.
