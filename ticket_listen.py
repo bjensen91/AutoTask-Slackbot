@@ -11,7 +11,16 @@ at = atws.connect(username='<YOUR AUTOTASK USERNAME',password='<YOUR AUTOTASK PA
 
 priority_list = [0, '#ffa500', '#008000', '#59afe1', '#ff4500'] 
 
-#list1 = [0] * 7
+
+#The lists below represent the 'KeyAccountIcon' values. They will likely be different for each AutoTask subscriber,
+#use the info.py on a test ticket and cycle through the different KeyAccountIcons your company has, then put them in the 
+#appropriate spot on the list.
+#I have broken the list into 4 seperate lists to avoid making one list with over 200 zeros in it,
+#instead i decided to make 4 lists then combine them.
+
+#if you would like this feature, just uncomment once your own list is built, do the same in the body of the script.
+
+#list1 = [0] * 7 #represents numbers KeyAccountIcon 0-7
 #list2 = ['Jeopardy', 0, 0, 0, 0,'Time and Materials', 'Residential', 'Jeopardy', 'MSP Gold', 'Residential MSP', 'Tier 1 MSP']
 #list3 = [0] * 182
 #list4 = ['Community Partner', ' no longer a client', 'inactive business client', 'Vendor', 'DO NOT PROVIDE SERVICE UNTIL PAY', 'inactive residential']
@@ -40,11 +49,11 @@ def autotask(message, ticket_number):
 			    {
 			    'title': 'Assigned to',
 			    'value': 'Ticket not assigned'
-			    },
-			    {
-			    'title': f'Support level',
-			    'value': 'edit the lists to make this work for you' #list5[accountidquery.KeyAccountIcon]
-			    }
+			    }#,
+			    #{
+			    #'title': f'Support level',
+			    #'value': list5[accountidquery.KeyAccountIcon]
+			    #}
 			],
             'color': priority_list[ticketnumberquery.Priority]
 		    }]
@@ -63,11 +72,11 @@ def autotask(message, ticket_number):
 			    {
 			    'title': 'Assigned to',
 			    'value': f'{assignedto.FirstName} {assignedto.LastName}'
-			    },
-			    {
-			    'title': 'Support Level',
-			    'value': 'edit the lists to make this work for you' #list5[accountidquery.KeyAccountIcon],
-			    }
+			    }#,
+			    #{
+			    #'title': 'Support Level',
+			    #'value': list5[accountidquery.KeyAccountIcon],
+			    #}
 			],
             'color': priority_list[ticketnumberquery.Priority]
 		    }]
